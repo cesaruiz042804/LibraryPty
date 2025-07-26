@@ -1,0 +1,260 @@
+//---------------------------------------
+.offer-card {
+    padding: 46px;
+    border-radius: 25px;
+    background-position: top left;
+    @include xl {
+        padding: 35px;
+        border-radius: 20px;
+    }
+    @include vxs {
+        padding: 30px 20px;
+    }
+    .box-subtitle {
+        font-size: 16px;
+        font-weight: 600;
+        margin-top: -0.4em;
+        margin-bottom: 30px;
+        display: block;
+    }
+    .box-title {
+        font-size: 36px;
+        line-height: 42px;
+        font-weight: 700;
+        margin-bottom: 15px;
+        @include xl {
+            font-size: 30px;
+            line-height: normal;
+        }
+        @include vxs {
+            font-size: 26px;
+        }
+    }
+}
+
+//--------------------------------------------
+.offer-box {
+    padding: 40px 30px;
+    border-radius: 20px;
+    background-position: left center;
+    .box-subtitle {
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        line-height: 24px;
+        padding: 0 13px;
+        margin-bottom: 21px;
+        border-radius: 99px;
+        display: inline-block;
+        background-color: $theme-color2;
+        color: $white-color;
+    }
+    .box-title {
+        margin-bottom: 23px;
+    }
+}
+
+
+//---------------------------------------
+.offer-grid {
+    padding: 40px 30px 40px 30px;
+    border-radius: 20px;
+    background-position: top left;
+    height: 100%;
+    .box-subtitle {
+        font-size: 18px;
+        font-weight: 500;
+        margin-top: -0.4em;
+        margin-bottom: 20px;
+        display: block;
+    }
+    .box-title {
+        font-weight: 700;
+        margin-bottom: 33px;
+    }
+}
+
+//---------------------------------------
+.offer-block {
+    padding: 27px 40px 40px 40px;
+    border-radius: 30px;
+    background-color: $smoke-color2;
+    .box-img {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        z-index: 2;
+        @include sm {
+            max-width: 55%;
+        }
+    }
+    .box-subtitle {
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-top: -0.36em;
+        margin-bottom: 16px;
+        display: block;
+        color: $theme-color;
+    }
+    .box-heading {
+        display: block;
+        font-family: $title-font;
+        font-size: 20px;
+        font-weight: 300;
+        color: $theme-color;
+        margin-bottom: 10px;
+        margin-top: -0.4em;
+    }
+    .box-title {
+        font-size: 36px;
+        font-weight: 300;
+        margin-bottom: 0;
+        position: relative;
+        z-index: 3;
+        b {
+            font-weight: 700;
+        }
+    }
+    .box-text {
+        margin-bottom: 22px;
+        position: relative;
+        z-index: 3;
+    }
+    .box-content {
+        position: relative;
+        padding: 35px;
+        border: 5px solid $white-color;
+        border-radius: 15px;
+        box-sizing: border-box;
+        &:after {
+            content: '';
+            position: absolute;
+            right: -5px;
+            bottom: -5px;
+            height: 70%;
+            width: 80%;
+            border-bottom: 5px solid $border-color;
+            border-right: 5px solid $border-color;
+            border-radius: 0 0 15px 0;
+        }
+    }
+    .box-shape {
+        position: absolute;
+        inset: 0;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+@include xs {
+    .offer-block {
+        padding: 30px;
+        border-radius: 20px;
+        .box-img {
+            max-width: 50%;
+        }
+        .box-subtitle {
+            margin-bottom: 12px;
+        }
+        .box-content {
+            padding: 15px;
+            border: 3px solid $white-color;
+        }
+    }
+}
+
+@include vxs {
+    .offer-block {
+        padding: 25px;
+        .box-title {
+            font-size: 30px;
+        }
+    }
+}
+
+//---------------------------------------
+.cta-box {
+    padding: 0;
+    border-radius: 40px;
+    background-position: top left;
+    overflow: hidden;
+    @include sm {
+        border-radius: 20px;
+    }
+    .box-content {
+        position: relative;
+        padding: 120px 0px 120px 120px;
+        @include xl {
+            padding: 100px 0 100px 80px;
+        }
+        @include lg {
+            padding: 100px 60px 40px;
+        }
+        @include md {
+            padding: 70px 40px 40px;
+        }
+        @include xs {
+            padding: 70px 30px 40px;
+        }
+    }
+}
+
+.cta-box2 {
+    padding: 10px 0 0;
+    overflow: hidden;
+    @include lg {
+        padding: 80px 0 0 0;
+    }
+}
+
+.cta-box3 {
+    border-radius: 24px;
+    .box-content {
+        padding: 36px 30px 0;
+    }
+    .box-subtitle {
+        font-size: 16px;
+        font-weight: 600;
+        margin-bottom: 32px;
+    }
+    .box-title {
+        margin-bottom: 10px;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 1.166;
+        margin-top: -0.25em;
+    }
+    .offer-thumb {
+        text-align: right;
+        padding-top: 10px;
+    }
+    .ot-btn {
+        padding: 14px 30px;
+    }
+    @include sm {
+        .box-title {
+            font-size: 34px;
+        }
+    }
+    @include xs {
+        .box-title {
+            font-size: 28px;
+        }
+    }
+}
+.cta-box6 {
+    padding: 1px 60px 0;
+    border-radius: 20px;
+    .cta-thumb6-1 {
+        margin-top: 30px;
+    }
+    @include lg {
+        padding: 60px;
+    }
+    @include xs {
+        padding: 60px 30px;
+    }
+}

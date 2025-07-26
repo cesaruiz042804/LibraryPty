@@ -1,0 +1,127 @@
+/* Testimonial Card ---------------------------------- */
+.testi-slider1 {
+    .slider-pagination {
+        position: relative;
+        &:after,
+        &:before {
+            content: '';
+            position: relative;
+            display: inline-block;
+            width: 83px;
+            height: 2px;
+            top: -3px;
+            background: linear-gradient(to left, $theme-color, transparent);
+            transform: translate(-12px, -50%);
+        }
+        &:after {
+            background: linear-gradient(to right, $theme-color, transparent);
+            transform: translate(12px, -50%);
+        }
+        .swiper-pagination-bullet {
+            border: 0;
+            background: $theme-color;
+            --swiper-pagination-bullet-size: 10px;
+            --swiper-pagination-bullet-horizontal-gap: 12px;
+            &.swiper-pagination-bullet-active {
+                &:before {
+                    inset: -12px;
+                    background: transparent;
+                    border: 1px solid $theme-color;
+                }
+            }
+        }
+    }
+    @include xs {
+        .slider-pagination:after, 
+        .slider-pagination:before {
+            display: none;
+        }
+    }
+}
+.testi-card {
+    position: relative;
+    overflow: hidden;
+    background: transparent;
+    padding-top: 22px;
+    .testi-quote-icon {
+        position: absolute;
+        right: 33px;
+        top: 10px;
+        z-index: 1;
+        color: $theme-color;
+    }
+    .testi-card-content {
+        padding: 64px 54px 54px 36px;
+        background-color: $border-color;
+        text-align: center;
+        mask-image: url('data:image/svg+xml,<svg width="382" height="223" viewBox="0 0 382 223" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M30.4746 23.09C21.6481 23.7359 13.4316 27.9338 7.72671 34.7151C2.02182 41.4964 -0.705044 50.2869 0.156071 59.1134L12.6423 185.948C14.2569 202.417 27.8912 215.119 44.4677 215.585L307.538 222.833C322.859 223.263 336.422 213.038 340.261 198.219L380.949 41.1376C383.604 30.876 381.164 19.9685 374.383 11.8238C367.601 3.67906 357.304 -0.698275 346.755 0.0910807L30.4746 23.09Z" fill="%23D9D9D9" stroke="%23D9D9D9"/></svg>');
+        mask-size: 100% 100%;
+        position: relative;
+        &:after {
+            content: '';
+            position: absolute;
+            inset: 1px;
+            background: $smoke-color;
+            mask-image: url('data:image/svg+xml,<svg width="382" height="223" viewBox="0 0 382 223" preserveAspectRatio="none" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M30.4746 23.09C21.6481 23.7359 13.4316 27.9338 7.72671 34.7151C2.02182 41.4964 -0.705044 50.2869 0.156071 59.1134L12.6423 185.948C14.2569 202.417 27.8912 215.119 44.4677 215.585L307.538 222.833C322.859 223.263 336.422 213.038 340.261 198.219L380.949 41.1376C383.604 30.876 381.164 19.9685 374.383 11.8238C367.601 3.67906 357.304 -0.698275 346.755 0.0910807L30.4746 23.09Z" fill="%23D9D9D9" stroke="%23D9D9D9"/></svg>');
+            mask-size: 100% 100%;
+            z-index: -1;
+        }
+    }
+    .box-text {
+        font-size: 16px;
+        line-height: 1.75em;
+        margin: 0;
+        border-radius: 10px 10px 0 0;
+        margin-top: -0.4em;
+    }
+    .box-title {
+        margin-top: 17px;
+        margin-bottom: -0.3em;
+        font-size: 16px;
+        font-weight: 600;
+        position: relative;
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        &:before {
+            content: '';
+            position: relative;
+            display: inline-block;
+            height: 2px;
+            width: 24px;
+            background: $title-color;
+        }
+    }
+}
+@include xxl {
+    .testi-card {
+        .testi-card-content {
+            padding: 74px 54px 64px 36px;
+        }
+    }
+}
+@include lg {
+    .testi-card .testi-card-content {
+        padding: 84px 54px 74px 36px;
+    }
+}
+@include md {
+    .testi-card .testi-card-content {
+        padding: 64px 54px 54px 36px;
+    }
+}
+@include sm {
+    .testi-card .testi-card-content {
+        padding: 84px 54px 74px 36px;
+    }
+}
+@include xs {
+    .testi-card .testi-card-content {
+        padding: 84px 54px 74px 36px;
+    }
+}
+@include vxs {
+    .testi-card .testi-card-content {
+        padding: 74px 40px 64px 30px;
+    }
+}

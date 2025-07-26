@@ -1,0 +1,126 @@
+/* Countdown ---------------------------------- */
+.counter-list {
+    background: transparent;
+    display: inline-flex;
+    margin: 0 0 0 0;
+    gap: 10px;
+    padding: 0;
+    @include sm {
+        justify-content: center;
+        display: flex;
+    }
+    li {
+        display: block;
+        text-align: center;
+        padding: 5.5px 10px;
+        position: relative;
+        background: $theme-color;
+        border-radius: 30px;
+        min-width: 95px;
+        .count-number {
+            color: $white-color;
+            font-size: 18px;
+            font-weight: 700;
+            font-family: $title-font;
+            margin-top: 0px;
+            position: relative;
+            display: inline-block;
+            padding-right: 8px;
+            line-height: 1;
+            &:after {
+                content: ':';
+                position: absolute;
+                display: inline-block;
+                color: $white-color;
+                font-size: 18px;
+                font-weight: 700;
+                top: 50%;
+                right: 0;
+                transform: translate(50%, -50%);
+                line-height: 1;
+            }
+            @include xs {
+                display: block;
+                padding-right: 0;
+                &:after {
+                    display: none;
+                }
+            }
+        }
+        .count-name {
+            color: $white-color;
+            font-family: $title-font;
+            font-weight: 500;
+            font-size: 14px;
+            text-transform: uppercase;
+            margin-bottom: -0.4em;
+            padding-left: 6px;
+            @include xs {
+                padding-left: 0;
+                display: block;
+            }
+        }
+        @include xs {
+            min-width: auto;
+            flex: 100%;
+        }
+    }
+}
+/* Counter 1 ---------------------------------- */
+.counter-card {
+    --border-color: #D4D4D4;
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        padding: 100px 0 $space 0;
+        border-top: 1px solid $border-color;
+        @include md {
+            flex-wrap: wrap;
+            padding: 80px 0;
+            gap: 24px;
+        }
+    }
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    @include lg {
+        gap: 20px;
+    }
+    @include md {
+        flex: calc(50% - 24px);
+    }
+    @include xs {
+        flex-direction: column;
+        text-align: center;
+        gap: 16px;
+    }
+    .box-icon {
+        @include equal-size-lineHeight(90px);
+        background-color: $theme-color;
+        border-radius: 99px;
+        text-align: center;
+    }
+    .box-number {
+        font-size: 44px;
+        color: $title-color;
+        font-weight: 600;
+        margin-bottom: 4px;
+        margin-top: -0.15em;
+    }
+    .box-text {
+        display: block;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        margin-bottom: 0;
+    }
+}
+
+.counter-sec-border {
+    border-top: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;
+    padding: 100px 0;
+    @include md {
+        padding: 80px 0;
+    }
+}

@@ -1,0 +1,608 @@
+/* Hero Global ---------------------------------- */
+.ot-hero-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+.ot-hero-bg {
+    position: absolute;
+    inset: 0;
+    img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+    }
+}
+/* Hero 1 ---------------------------------- */
+.hero-title {
+    font-size: 74px;
+    font-weight: 700;
+    line-height: 1.13333;
+    margin-bottom: 31px;
+    margin-top: -0.22em;
+    letter-spacing: -0.03em;
+    .title1,
+    .title2 {
+        display: block;
+        max-width: fit-content;
+        position: relative;
+        span {
+            font-weight: 300;
+            color: $theme-color;
+        }
+    }
+}
+.hero-text {
+    margin-bottom: 42px;
+}
+
+.hero-1 {
+    padding-top: 40px;
+    overflow: hidden;
+    background-image: linear-gradient(180deg, #E6F5F9 0%, rgba(230, 245, 249, 0) 100%);
+    .hero-shape1 {
+        display: inline-block;
+        position: absolute;
+        top: 80px;
+        left: -100px;
+    }
+    .hero-shape2 {
+        display: inline-block;
+        position: absolute;
+        bottom: 170px;
+        right: -70px;
+    }
+}
+.post-grid-wrap {
+    background: $white-color;
+    border-radius: 16px;
+    padding: 36px;
+    box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.05);
+    .post-grid-wrap-title {
+        margin-top: -0.3em;
+        font-size: 22px;
+        margin-bottom: 20px;
+    }
+    @include ml {
+        padding: 30px;
+    }
+}
+
+.watch-btn {
+    .text {
+        font-weight: 500;
+        color: $title-color;
+        margin-left: 20px;
+    }
+    &:hover {
+        .text {
+            color: $theme-color;
+        }
+    }
+}
+.hero-wrap1 {
+    border-radius: 30px;
+    position: relative;
+    .hero-particle {
+        position: absolute;
+        inset: 0;
+        z-index: 1;
+        pointer-events: none;
+        canvas {
+            object-fit: cover;
+        }
+    }
+    .hero-shape3 {
+        position: absolute;
+        bottom: 50px;
+        left: 600px;
+    }
+    .hero-thumb1-1 {
+        position: absolute;
+        bottom: 0;
+        right: 60px;
+        .hero-shape1-3 {
+            position: absolute;
+            top: 80px;
+            left: 10px;
+        }
+        .hero-shape1-4 {
+            position: absolute;
+            top: 160px;
+            right: 0;
+        }
+    }
+}
+.hero-style1 {
+    position: relative;
+    z-index: 6;
+    padding: 155px 0 155px 120px;
+    .sub-title  {
+        margin-bottom: 29px;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: $title-font;
+        color: $title-color;
+        background-color: rgba($color: #ffffff, $alpha: 0.4);
+        display: inline-block;
+        padding: 1px 30px 1px 10px;
+        border-radius: 4px 0 0 4px;
+        clip-path: polygon(100% 0%, calc(100% - 12px) 50%, 100% 100%, 0 100%, 0 0);
+    }
+    .hero-title {
+        margin-bottom: 34px;
+    }
+    .title-img {
+        position: absolute;
+        bottom: 72%;
+        right: 5%;
+    }
+    .hero-text {
+        max-width: 570px;
+    }
+}
+@include xxl {
+    .hero-wrap1 .hero-thumb1-1 {
+        max-width: 650px;
+        .hero-shape1-3 {
+            top: 40px;
+        }
+        .hero-shape1-4 {
+            top: 110px;
+        }
+    }
+    .hero-title {
+        font-size: 64px;
+    }
+}
+@include ml {
+    .hero-style1 {
+        padding: 155px 0 155px 80px;
+    }
+    .hero-title {
+        font-size: 60px;
+    }
+}
+@include xl {
+    .hero-wrap1 .hero-thumb1-1 {
+        max-width: 550px;
+        .hero-shape1-3 {
+            max-width: 120px;
+        }
+        .hero-shape1-4 {
+            max-width: 100px;
+        }
+    }
+    .hero-style1 {
+        padding: 120px 0 120px 80px;
+    }
+    .hero-title {
+        font-size: 50px;
+    }
+}
+@include lg {
+    .hero-wrap1 .hero-thumb1-1 {
+        max-width: 500px;
+        margin-right: -40px;
+        .hero-shape1-3 {
+            max-width: 90px;
+        }
+        .hero-shape1-4 {
+            max-width: 70px;
+        }
+    }
+    .hero-title {
+        font-size: 46px;
+    }
+    .hero-style1 {
+        padding: 100px 0 100px 60px;
+    }
+}
+
+@include md {
+    .hero-style1 {
+        text-align: center;
+        max-width: 100%;
+        padding: 100px 25px 60px;
+        .title1,
+        .title2 {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .hero-text {
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .btn-group {
+            justify-content: center;
+        }
+    }
+    .hero-wrap1 .hero-thumb1-1 {
+        max-width: none;
+        position: relative;
+        right: 0;
+        left: 0;
+        text-align: center;
+        margin: 0 30px;
+        .hero-shape1-3 {
+            top: 90px;
+        }
+        .hero-shape1-4 {
+            top: 180px;
+        }
+    }
+}
+
+@include sm {
+    .hero-wrap1 .hero-thumb1-1 {
+        .hero-shape1-3 {
+            top: 30px;
+        }
+        .hero-shape1-4 {
+            top: 90px;
+        }
+    }
+}
+
+@include xs {
+    .hero-title {
+        font-size: 40px;
+        line-height: 1.24;
+        margin-bottom: 35px;
+    }
+    .hero-style1 {
+        padding: 100px 25px 40px;
+        .sub-title {
+            font-size: 14px;
+        }
+        .hero-title {
+            margin-bottom: 35px;
+        }
+    }
+    .hero-wrap1 .hero-thumb1-1 {
+        .hero-shape1-3 {
+            top: 0px;
+            left: 0;
+        }
+        .hero-shape1-4 {
+            top: 60px;
+        }
+    }
+}
+
+@media (max-width: 390px) {
+    .hero-title {
+        font-size: 36px;
+        line-height: 1.3;
+    }
+    .hero-wrap1 .hero-thumb1-1 {
+        .hero-shape1-3 {
+            width: 70px;
+        } 
+        .hero-shape1-4 {
+            width: 50px;
+        }   
+    }
+}
+
+@media (max-width: 330px) {
+    .hero-title {
+        font-size: 32px;
+    }
+    .hero-style1 .sub-title {
+        font-size: 12px;
+    }
+}
+
+
+/* Hero 2 --------------------------------------*/
+.hero-2 {
+    overflow: hidden;
+    .hero-ad-wrap {
+        border-radius: 20px;
+        margin-top: 20px;
+        padding-top: 25px;
+        text-align: center;
+        .box-title {
+            color: $white-color;
+            letter-spacing: -0.03em;
+            font-size: 20px;
+            font-weight: 700;
+            margin-top: 11px;
+            margin-bottom: 20px;
+        }
+    }
+}
+.hero-slider2 {
+    margin-left: 60px;
+    margin-top: 25px;
+    border-radius: 20px;
+    position: relative;
+    .swiper-slide {
+        opacity: 0 !important;
+        &.swiper-slide-active {
+            opacity: 1 !important;
+        }
+    }
+    .slider-pagination {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin-bottom: 35px !important;
+        text-align: start;
+        margin-left: 56px;
+        .swiper-pagination-bullet {
+            --swiper-pagination-bullet-size: 8px;
+            --swiper-pagination-bullet-horizontal-gap: 4px;
+            width: 16px;
+            border: 0;
+            background: $white-color;
+            border-radius: 100px;
+            transition: 0.4s;
+            &.swiper-pagination-bullet-active {
+                width: 40px;
+                background: $title-color;
+            }
+            &:before {
+                display: none;
+            }
+        }
+    }
+    @include xxl {
+        margin-left: 103px;
+    }
+    @include ml {
+        margin-left: 118px;
+        .slider-pagination {
+            margin-left: 36px;
+        }
+    }
+    @include xl {
+        margin-left: 138px;
+    }
+    @include lg {
+        margin-left: 0;
+    }
+    @include sm {
+        .slider-pagination {
+            text-align: center;
+            margin-left: 0;
+        }
+        .hero-inner {
+            background-position: left;
+        }
+    }
+}
+.hero-wrap2 {
+    position: relative;
+    .hero-thumb2-1 {
+        position: absolute;
+        right: 40px;
+        bottom: 25px;
+    }
+}
+.hero-style2 {
+    position: relative;
+    z-index: 6;
+    padding: 80px 0 128px 60px;
+    .sub-title  {
+        margin-bottom: 29px;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: $title-color;
+        color: $theme-color;
+        background-color: $smoke-color3;
+        display: inline-block;
+        padding: 0px 30px 0px 10px;
+        clip-path: polygon(100% 0%, calc(100% - 12px) 50%, 100% 100%, 0 100%, 0 0);
+        border-radius: 8px 0 0 8px;
+    }
+    .hero-title {
+        color: $title-color;
+        font-size: 44px;
+        margin-bottom: 22px;
+        span {
+            display: block;
+        }
+    }
+    .ot-btn {
+        padding: 17px 30px;
+    }
+    @include ml {
+        padding: 80px 0 128px 40px;
+    }
+    @include xl {
+        .hero-title {
+            font-size: 40px;
+        }
+    }
+    @include sm {
+        padding: 80px 0px 100px;  
+        text-align: center;
+        .hero-title {
+            font-size: 40px;
+            span {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+    @include xs {      
+        padding: 80px 20px 100px;  
+        .hero-title {
+            font-size: 36px;            
+        }
+    }
+    @include vxs {
+        .hero-title {
+            font-size: 34px;
+        }
+    }
+}
+@include xxl {
+    .hero-wrap2 .hero-thumb2-1 {
+        max-width: 350px;
+    }
+    .hero-2 .hero-ad-wrap .box-title {
+        font-size: 16px;
+        margin-top: 21px;
+        margin-bottom: 31px;
+    }
+}
+@include ml {
+    .hero-wrap2 .hero-thumb2-1 {
+        max-width: 300px;
+        right: 30px;
+        bottom: 65px;
+    }
+    .hero-2 .hero-ad-wrap .box-title {
+        font-size: 18px;
+        margin-top: 20px;
+        margin-bottom: 14px;
+    }
+}
+@include xl {
+    .hero-wrap2 .hero-thumb2-1 {
+        display: none;
+    }
+    .hero-2 .hero-ad-wrap .box-title {
+        margin-top: 36px;
+        margin-bottom: 24px;
+    }
+}
+@include lg {
+    .hero-wrap2 .hero-thumb2-1 {
+        display: block;
+    }
+    .hero-2 .hero-ad-wrap .box-title {
+        margin-top: 33px;
+        margin-bottom: 20px;
+    }
+}
+
+@include sm {
+    .hero-wrap2 .hero-thumb2-1 {
+        display: none;
+    }
+}
+
+/* Hero 3 --------------------------------------*/
+.hero-3 {
+    .hero-inner {
+        border-radius: 16px;
+        margin-top: 30px;
+        margin-left: 67px;
+        position: relative;
+        overflow: hidden;
+    }
+    .hero-thumb3-1 {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 1;
+        .thumb {
+            height: 100%;
+        }
+        .hero-shape3-3 {
+            position: absolute;
+            left: 0;
+            top: 20%;
+            z-index: -1;
+        }
+    }
+    @include xxl {
+        .hero-inner {
+            margin-left: 103px;
+        }
+        .hero-thumb3-1 {
+            width: 60%;
+            .thumb {
+                height: 100%;
+                object-fit: cover;
+                object-position: left;
+            }
+        }
+    }
+    @include ml {
+        .hero-thumb3-1 {
+            width: 58%;
+        }
+    }
+    @include xl {
+        .hero-inner {
+            margin-left: 144px;
+        }
+        .hero-thumb3-1 {
+            width: 50%;
+        }
+    }
+    @include lg {
+        .hero-inner {
+            margin-left: 0;
+        }
+    }
+    @include md {
+        .hero-thumb3-1 {
+            width: 40%;
+        }
+    }
+    @include sm {
+        .hero-thumb3-1 {
+            display: none;
+        }
+    }
+}
+.hero-style3 {
+    position: relative;
+    z-index: 6;
+    padding: 97px 0 97px 64px;
+    .sub-title  {
+        margin-bottom: 29px;
+        font-size: 16px;
+        font-weight: 700;
+        font-family: $title-color;
+        color: $theme-color;
+        background-color: $white-color;
+        display: inline-block;
+        padding: 0px 30px 0px 10px;
+        border-radius: 8px 0 0 8px;
+        clip-path: polygon(100% 0%, calc(100% - 12px) 50%, 100% 100%, 0 100%, 0 0);
+    }
+    .hero-title {
+        color: $white-color;
+        font-size: 42px;
+        margin-bottom: 34px;
+        span {
+            display: block;
+        }
+    }
+    .ot-btn {
+        padding: 17px 30px;
+    }
+    @include xxl {
+        padding: 97px 0 97px 45px;
+    }
+    @include sm {
+        padding: 90px 30px;
+        text-align: center;
+        .hero-title {
+            font-size: 40px;
+            span {
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+    @include xs {        
+        .hero-title {
+            font-size: 36px;            
+        }
+    }
+    @include vxs {
+        .hero-title {
+            font-size: 34px;
+        }
+    }
+}

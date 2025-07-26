@@ -1,0 +1,58 @@
+
+/* Feature List ---------------------------------- */
+.feature-list {
+    &-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 30px;
+    }
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+    padding: 22px;
+    &:after {
+        content: '';
+        position: absolute;
+        inset: 0;
+        border-radius: 30px;
+        background: $theme-color;
+        opacity: 0.15;
+        z-index: -1;
+    }
+    .box-title {
+        font-size: 24px;
+        font-weight: 700;
+        margin-bottom: 5px;
+    }
+    .box-icon {
+        @include equal-size-lineHeight(80px);
+        text-align: center;
+        background-color: $theme-color;
+        border-radius: 16px;
+    }
+    .box-text {
+        font-size: 16px;
+    }
+}
+@include xl {
+    .feature-list {
+        display: block;
+        text-align: center;
+        padding: 30px;
+        .box-icon {
+            display: inline-block;
+            margin-bottom: 20px;
+        }
+        .box-title {
+            font-size: 20px;
+        }
+    } 
+}
+@include lg {
+    .feature-list {
+        display: block;
+        text-align: center;
+    }
+}

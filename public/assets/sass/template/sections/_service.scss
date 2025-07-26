@@ -1,0 +1,109 @@
+/* Service Card ---------------------------------- */
+.service-card {
+    background-color: $white-color;
+    position: relative;
+    z-index: 2;
+    padding: 40px;
+    border: 1px solid $border-color;
+    // box-shadow: 0px 9px 75px rgba(8, 20, 44, 0.09);
+    border-radius: 10px;
+    transition: 0.4s ease-in-out;
+
+    .box-icon {
+        @include equal-size-lineHeight(75px);
+        text-align: center;
+        border-radius: 10px;
+        background-color: $smoke-color2;
+        margin-bottom: 50px;
+    }
+    .box-title {
+        margin-bottom: 17px;
+    }
+    .box-text {
+        margin-bottom: 17px;
+    }
+    .box-btn {
+        font-size: 18px;
+        display: block;
+        margin-bottom: -0.45em;
+        i {
+            transition: 0.4s ease-in-out;
+            &:hover {
+                transform: rotate(-315deg);
+            }
+        }
+    }
+    &:hover {
+        box-shadow: 0px 9px 75px rgba(8, 20, 44, 0.09);
+        .box-icon {
+            img {
+                transform: rotateY(180deg);
+            }
+        }
+    }
+}
+
+.service-sec1 {
+    position: relative;
+    z-index: 3;
+    background-position: top center;
+    background-size: auto;
+    padding-top: 340px;
+    @include hd {
+        background-size: 100% 748px;
+    }
+    @include xl {
+        padding-top: 300px;
+    }
+}
+
+/* Service Box ---------------------------------- */
+.service-box {
+    background-color: #F2F7FB;
+    border-radius: 15px;
+    padding: 50px 40px;
+    .box-icon {
+        margin: 20px 0;
+    }
+    .box-title {
+        margin-bottom: 17px;
+    }
+    .link-btn {
+        display: block;
+        max-width: fit-content;
+        margin-bottom: -0.2em;
+    }
+}
+
+@include lg {
+    .service-box {
+        padding: 40px 30px;
+    }
+}
+@include xs {
+    .service-box {
+        border-radius: 10px;
+    }
+}
+
+
+/* Service Details ---------------------------------- */ 
+.page-title {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.page-img {
+    margin-bottom: 40px;
+    overflow: hidden;
+    border-radius: 15px;
+    img {
+        width: 100%;
+    }
+    @include sm {
+        border-radius: 10px;
+    }
+}
+.page-single {
+    margin-bottom: 30px;
+}

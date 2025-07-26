@@ -1,0 +1,107 @@
+/* Why 1 ---------------------------------- */ 
+.call-text {
+    margin-left: 6px;
+    text-align: left;
+    @include sm {
+        margin-left: 0;
+    }
+    .box-title {
+        font-size: 18px;
+        font-weight: 600;
+        color: $theme-color;
+        margin-bottom: 5px;
+    }
+    .box-text {
+        display: block;
+        font-weight: 500;
+    }
+}
+
+/* Why 2 ---------------------------------- */ 
+.feature-box {
+    background-color: $white-color;
+    border: 1px solid #E7EAF1;
+    border-radius: 10px;
+    padding: 45px;
+    background-size: auto;
+    background-position: top right;
+    transition: 0.4s ease;
+    .box-subtitle {
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: uppercase;
+        display: block;
+        margin-top: -0.5em;
+        margin-bottom: 18px;
+    }
+    .box-title {
+        font-size: 30px;
+        line-height: 38px;
+        margin-bottom: 22px;
+    }
+    .box-img {
+        margin-top: 50px;
+        height: 195px;
+    }
+    .link-btn {
+        font-size: 18px;
+        color: $title-color;
+        i {
+            color: $theme-color;
+            transition: 0.3s;
+        }
+        &:hover {
+            color: $theme-color;
+            i {
+                transform: rotate(45deg);
+            }
+        }
+    }
+    &:hover {
+        box-shadow: 0px 29px 52px rgba(28, 33, 48, 0.1);
+    }
+}
+
+@include lg {
+    .feature-box {
+        padding: 30px;
+        .box-title {
+            font-size: 26px;
+        }
+        .box-img {
+            height: 166px;
+        }
+    }
+}
+
+@include sm {
+    .feature-box {
+        padding: 45px;
+        .box-img {
+            height: auto;
+        }
+        .box-title {
+            font-size: 30px;
+        }
+    }
+}
+
+@include vxs {
+    .feature-box {
+        padding: 35px;
+        .box-title {
+            font-size: 26px;
+        }
+    }
+}
+
+/* why 3 --------------------------------*/
+.img-box5 {
+    margin-right: -90px;
+    @include ml {
+        margin-right: -30px;
+    }
+    @include md {
+        margin: 40px auto 0 auto;
+    }
+}

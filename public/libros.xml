@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<libros>
+    <libro>
+        <titulo>1984</titulo>
+        <autor>George Orwell</autor>
+        <anio_publicacion>1949</anio_publicacion>
+        <sinopsis>Una distopía sobre un régimen totalitario y la manipulación de la verdad.</sinopsis>
+        <stock>15</stock>
+        <status>activo</status>
+        <precio_base>12.00</precio_base>
+        <precio_final>12.84</precio_final>
+        <isbn>9780451524935</isbn>
+        <categoria_nombre>Distopía</categoria_nombre>
+    </libro>
+    <libro>
+        <titulo>Un Mundo Feliz</titulo>
+        <autor>Aldous Huxley</autor>
+        <anio_publicacion>1932</anio_publicacion>
+        <sinopsis>Una visión distópica de una sociedad controlada por la tecnología y el condicionamiento.</sinopsis>
+        <stock>22</stock>
+        <status>activo</status>
+        <precio_base>11.50</precio_base>
+        <precio_final>12.31</precio_final>
+        <isbn>9788490623348</isbn>
+        <categoria_nombre>Distopía</categoria_nombre>
+    </libro>
+    <libro>
+        <titulo>El nombre de la rosa</titulo>
+        <autor>Umberto Eco</autor>
+        <anio_publicacion>1980</anio_publicacion>
+        <sinopsis>Un misterio medieval en una abadía italiana, con elementos de semiótica y filosofía.</sinopsis>
+        <stock>18</stock>
+        <status>activo</status>
+        <precio_base>18.75</precio_base>
+        <precio_final>20.06</precio_final>
+        <isbn>9788497592476</isbn>
+        <categoria_nombre>Novela Histórica</categoria_nombre>
+    </libro>
+    <libro>
+        <titulo>Crimen y Castigo</titulo>
+        <autor>Fiódor Dostoyevski</autor>
+        <anio_publicacion>1866</anio_publicacion>
+        <sinopsis>La lucha moral y psicológica de un estudiante que comete un asesinato.</sinopsis>
+        <stock>10</stock>
+        <status>activo</status>
+        <precio_base>14.00</precio_base>
+        <precio_final>14.98</precio_final>
+        <isbn>9788491040061</isbn>
+        <categoria_nombre>Clásico</categoria_nombre>
+    </libro>
+    <libro>
+        <titulo>La Metamorfosis</titulo>
+        <autor>Franz Kafka</autor>
+        <anio_publicacion>1915</anio_publicacion>
+        <sinopsis>La transformación de Gregor Samsa en un insecto gigante.</sinopsis>
+        <stock>28</stock>
+        <status>activo</status>
+        <precio_base>8.50</precio_base>
+        <precio_final>9.09</precio_final>
+        <isbn>9788479100772</isbn>
+        <categoria_nombre>Ficción</categoria_nombre>
+    </libro>
+    <libro>
+        <titulo>Sapiens: De animales a dioses</titulo>
+        <autor>Yuval Noah Harari</autor>
+        <anio_publicacion>2014</anio_publicacion>
+        <sinopsis>Una breve historia de la humanidad, explorando cómo la cognición ha moldeado nuestra especie.</sinopsis>
+        <stock>30</stock>
+        <status>activo</status>
+        <precio_base>22.00</precio_base>
+        <precio_final>23.54</precio_final>
+        <isbn>9788499926222</isbn>
+        <categoria_nombre>No Ficción</categoria_nombre>
+    </libro>
+    <libro>
+        <titulo>Cumbres Borrascosas</titulo>
+        <autor>Emily Brontë</autor>
+        <anio_publicacion>1847</anio_publicacion>
+        <sinopsis>Una trágica historia de amor y venganza en los páramos de Yorkshire.</sinopsis>
+        <stock>14</stock>
+        <status>activo</status>
+        <precio_base>13.20</precio_base>
+        <precio_final>14.12</precio_final>
+        <isbn>9788491052606</isbn>
+        <categoria_nombre>Clásico</categoria_nombre>
+    </libro>
+    <libro>
+        <titulo>El Gran Gatsby</titulo>
+        <autor>F. Scott Fitzgerald</autor>
+        <anio_publicacion>1925</anio_publicacion>
+        <sinopsis>La historia del misterioso millonario Jay Gatsby y su amor por Daisy Buchanan en la era del jazz.</sinopsis>
+        <stock>0</stock>
+        <status>inactivo</status>
+        <precio_base>10.99</precio_base>
+        <precio_final>11.76</precio_final>
+        <isbn>9788466336340</isbn>
+        <categoria_nombre>Clásico</categoria_nombre>
+    </libro>
+    <libro>
+        <titulo>El Retrato de Dorian Gray</titulo>
+        <autor>Oscar Wilde</autor>
+        <anio_publicacion>1890</anio_publicacion>
+        <sinopsis>Un joven mantiene su belleza juvenil mientras un retrato envejece y registra su alma degenerada.</sinopsis>
+        <stock>0</stock>
+        <status>inactivo</status>
+        <precio_base>10.00</precio_base>
+        <precio_final>10.70</precio_final>
+        <isbn>9788491050077</isbn>
+        <categoria_nombre>Clásico</categoria_nombre>
+    </libro>
+    <libro>
+        <titulo>Frankenstein</titulo>
+        <autor>Mary Shelley</autor>
+        <anio_publicacion>1818</anio_publicacion>
+        <sinopsis>Un científico crea un ser vivo, con consecuencias trágicas.</sinopsis>
+        <stock>0</stock>
+        <status>inactivo</status>
+        <precio_base>9.80</precio_base>
+        <precio_final>10.49</precio_final>
+        <isbn>9788491050473</isbn>
+        <categoria_nombre>Clásico</categoria_nombre>
+    </libro>
+</libros>

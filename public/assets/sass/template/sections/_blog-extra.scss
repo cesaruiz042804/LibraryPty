@@ -1,0 +1,214 @@
+/* Blog Card ---------------------------------- */
+.blog-card {
+    background-color: $white-color;
+    border-radius: 30px;
+    padding: 20px;
+    box-shadow: 0px 4px 25px rgba(0, 0, 0, 0.06);
+    .blog-img {
+        border-radius: 16px;
+        margin-bottom: 27px;
+        overflow: hidden;
+        img {
+            width: 100%;
+            transition: 0.4s ease-in-out;
+        }
+    }
+    .box-title {
+        margin-bottom: 17px;
+        a {
+            background-image: linear-gradient(to left, $theme-color, $theme-color);
+            background-repeat: no-repeat;
+            background-position: bottom left;
+            background-size: 0 2px;
+            transition: 0.5s ease-in-out;
+            &:hover {
+                background-size: 100% 2px;
+            }
+        }
+    }
+    .box-text {
+        margin-bottom: 22px;
+    }
+    .blog-meta {
+        margin: -0.4em 0 20px 0;
+    }
+    .link-btn {
+        display: block;
+        max-width: max-content;
+        margin-bottom: -0.1em;
+    }
+    &:hover {
+        .blog-img {
+            img {
+                transform: scale(1.08);
+            }
+        }
+    }
+}
+@include md {
+    .blog-card .box-title {
+        font-size: 22px;
+    }
+}
+@include sm {
+    .blog-card {
+        .box-title {
+            font-size: 24px;
+        }
+    }
+}
+@include xs {
+    .blog-card {
+        border-radius: 10px;
+        .blog-img {
+            border-radius: 10px;
+        }
+    }
+}
+@media (max-width: 360px) {
+    .blog-card .box-title {
+        font-size: 21px;
+    }
+}
+/* Blog Card Style 2 ---------------------------------- */
+.blog-card.style2 {
+    .blog-img {
+        position: relative;
+        margin-bottom: 28px;
+        .blog-tag {
+            position: absolute;
+            left: 16px;
+            top: 16px;
+            background: $theme-color;
+            border-radius: 10px;
+            font-size: 14px;
+            color: $white-color;
+            display: inline-block;
+            line-height: 1;
+            padding: 10px;
+        }
+    }
+    .blog-content {
+        padding: 0 10px 10px;
+    }
+    .blog-meta {
+        margin: -0.4em 0 13px 0;
+    }
+    .box-title {
+        font-size: 22px;
+        margin-bottom: 20px;
+        line-height: 1.4545em;
+    }
+    .link-btn {
+        font-weight: 500;
+    }
+    @include xxl {
+        .box-title {
+            font-size: 18px;
+        }
+    }
+    @include ml {
+        .box-title {
+            font-size: 22px;
+        }
+    }
+    @include md {
+        .box-title {
+            font-size: 18px;
+        }
+    }
+    @include sm {
+        .box-title {
+            font-size: 22px;
+        }
+    }
+    @include vxs {
+        .box-title {
+            font-size: 20px;
+        }
+    }
+}
+
+/* Blog Box ---------------------------------- */
+.blog-box {
+    border-radius: 20px;
+    background-color: $white-color;
+    border: 1px solid #E3E8F4;
+    .blog-img {
+        border-radius: 20px;
+        margin: -1px;
+        overflow: hidden;
+        img {
+            border-radius: inherit;
+            width: 100%;
+            transition: 0.4s ease-in-out;
+        }
+    }
+    .blog-content {
+        padding: 40px;
+    }
+    .box-title {
+        font-size: 30px;
+        margin-bottom: 16px;
+        a {
+            background-image: linear-gradient(to left, $theme-color, $theme-color);
+            background-repeat: no-repeat;
+            background-position: bottom left;
+            background-size: 0 2px;
+            transition: 0.5s ease-in-out;
+            &:hover {
+                background-size: 100% 2px;
+            }
+        }
+    }
+    .blog-meta {
+        margin: -0.3em 0 22px 0;
+        span, 
+        a {
+            > i {
+                color: $theme-color;
+            }
+        }
+    }
+    .ot-btn {
+        margin-top: 35px;
+        background-color: $smoke-color2;
+        color: $theme-color;
+        &::before {
+            background-color: $theme-color;
+        }
+        &:hover {
+            color: $white-color;
+        }
+    }
+    &:hover {
+        .blog-img {
+            img {
+                transform: scale(1.08);
+            }
+        }
+    }
+}
+
+@include xs {
+    .blog-box {
+        border-radius: 10px;
+        .blog-img {
+            border-radius: 10px;
+        }
+        .blog-content {
+            padding: 30px;
+        }
+        .box-title {
+            font-size: 24px;
+        }
+    }
+}
+
+@include vxs {
+    .blog-box {
+        .blog-content {
+            padding: 30px 20px 20px 20px;
+        }
+    }
+}

@@ -1,0 +1,312 @@
+.footer-wrapper {
+    --ot-border-color: rgba(255, 255, 255, 0.2);
+    --body-color: #fff;
+    position: relative;
+    z-index: 2;
+    background-color: $title-color;
+    overflow: hidden;
+    .ot-social {
+        a {
+            --icon-size: 40px;
+            line-height: 37px;
+            font-size: 14px;
+            background-color: transparent;
+            color: $white-color;
+            border: 1px solid $border-color;
+            border-radius: 12px;
+            &:hover {
+                background-color: $theme-color;
+                border-color: $theme-color;
+            }
+        }
+    }
+    .social-links a {
+        margin: 0 30px 0 0;
+    }
+}
+.widget-area {
+    padding-top: 65px;
+    padding-bottom: 30px;
+}
+.footer-bottom {
+    border-top: 1px solid $border-color;
+}
+.body-particle {
+    position: absolute;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+}
+.footer-layout1 {
+    padding-top: 80px;
+    z-index: 1;
+    .footer-shape1 {
+        position: absolute;
+        right: 70px;
+        bottom: 180px;
+        z-index: -1;
+    }
+}
+.footer-contact {
+    &-wrap {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 80px;
+        border-bottom: 1px solid $border-color;
+        @include xl {
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+    }
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    @include xl {
+        flex: calc(50% - 10px);
+    }
+    @include sm {
+        flex: 100%;
+    }
+    .box-icon {
+        @include equal-size-lineHeight(62px);
+        text-align: center;
+        position: relative;
+        &:before {
+            content: '';
+            position: absolute;
+            inset: 0;
+            border-radius: 99px;
+            border: 2px solid $white-color;
+            background: $theme-color;
+            z-index: -1;
+            animation: spin 10s linear infinite;
+        }
+    }
+    .box-title {
+        color: $white-color;
+        margin-bottom: 0;
+        font-weight: 600;
+        @include md {
+            font-size: 20px;
+        }
+    }
+    .box-label {
+        margin-bottom: 10px;
+    }
+}
+
+
+.sticky-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
+.footer-links {
+    ul {
+        padding: 0;
+        margin: 0;
+    }
+    li {
+        font-family: $body-font;
+        display: inline-block;
+        padding-right: 15px;
+        margin-right: 10px;
+        position: relative;
+        &:after {
+            content: "";
+            height: 20px;
+            width: 1px;
+            background-color: $body-color;
+            position: absolute;
+            top: 50%;
+            right: 0;
+            margin: -10px 0;
+        }
+        &:last-child {
+            margin-right: 0;
+            padding-right: 0;
+            &:after {
+                display: none;
+            }
+        }
+    }
+    a {
+        font-family: inherit;
+        color: $body-color;
+        &:hover {
+            color: $theme-color;
+        }
+    }
+}
+.copyright-wrap {
+    padding: 17px 0;
+    .copyright-text {
+        color: $white-color;
+        a {
+            color: $white-color;
+            &:hover {
+                color: $title-color;
+            }
+        }
+    }
+}
+
+.copyright-text {
+    margin: 0;
+    a {
+        color: $theme-color;
+        &:hover {
+            color: $white-color;
+        }
+    }
+}
+
+.footer-newsletter {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    padding-left: 60px;
+    .newsletter-title {
+        max-width: 425px;
+        margin-bottom: 0;
+    }
+}
+.schedule-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px dashed rgba($color: #fff, $alpha: 0.2);
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    &:last-of-type {
+        margin-bottom: 0;
+        padding-bottom: 0;
+        border-bottom: none;
+    }
+}
+.ot-widget-schedule {
+    width: 280px;
+    max-width: 100%;
+    .title {
+        color: $white-color;
+        font-size: 20px;
+        font-weight: 500;
+        margin-bottom: 16px;
+    }
+}
+.newsletter-form {
+    position: relative;
+    max-width: 450px;
+    display: flex;
+    align-items: center;
+    input {
+        height: 60px;
+        border-radius: 8px;
+    }
+    .ot-btn {
+        min-width: 145px;
+        padding: 21px 20px;
+    }
+}
+.newsletter-widget {
+    max-width: 355px;
+    .newsletter-form {
+        display: block;
+        input {
+            background-color: transparent;
+            border: 1px solid $border-color;
+            width: 100%;
+            border-radius: 30px;
+            color: $white-color;
+            padding: 0 70px 0 25px;
+        }
+    }
+    .form-group {
+        margin-bottom: 0;
+    }
+    .icon-btn {
+        --btn-size: 50px;
+        border: none;
+        background-color: $theme-color;
+        color: $white-color;
+        border-radius: 50%;
+        min-width: 50px;
+        padding: 0;
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        &:hover {
+            background-color: $theme-color2;
+        }
+    }
+    .footer-text {
+        margin-bottom: 25px;
+        font-weight: 500;
+    }
+}
+
+@include md {
+    .footer-wrapper {
+        .widget-area {
+            padding-top: $space-mobile;
+            padding-bottom: 30px;
+        }
+    }
+    .copyright-text {
+        text-align: center;
+    }
+}
+
+
+/* footer 2 ---------------------------------- */
+.footer-layout2 {
+    z-index: 1;
+    background-position: bottom center;
+    .footer-shape1 {
+        position: absolute;
+        right: 70px;
+        bottom: 180px;
+        z-index: -1;
+    }
+    .widget-area {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+    .copyright-wrap {
+        border-top: 1px solid #395263;
+        background: $title-color;
+    }
+}
+.info-box {
+	display: flex;
+    margin-bottom: 30px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &_icon {
+        @include equal-size(30px);
+        min-width: 30px;
+        line-height: 32px;
+        font-size: 14px;
+        background-color: rgba($color: #0E59F2, $alpha: 0.1);
+        color: $theme-color;
+        border-radius: 6px;
+        text-align: center;
+    }
+	&_text {
+		display: block;
+		color: $body-color;
+		margin-top: -0.45em;
+		margin-bottom: -0.45em;
+        align-self: center;
+	}
+	&_link {
+        display: inline-block;
+		color: $body-color;
+		&:hover {
+			color: $theme-color;
+		}
+	}
+}

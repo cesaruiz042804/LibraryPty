@@ -1,0 +1,107 @@
+.popup-search-box {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.65);
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    z-index: 99999;
+	opacity: 0;
+	visibility: hidden;
+	transition: 0.4s linear;
+	transition-delay: 0.35s;
+    
+    .search-content {
+        background-color: $white-color;
+        height: 350px;
+        display: grid;
+        align-items: center;
+		transform: translate3d(0, -100%, 0);
+    	transition: transform 0.85s cubic-bezier(0.175, 1, 0.275, 1), visibility 0.8s step-end;
+    }
+
+    button.searchClose {
+        width: 60px;
+        height: 60px;
+        position: absolute;
+        top: 40px;
+        right: 40px;
+        border-width: 1px;
+        border-style: solid;
+        border-color: $theme-color;
+        background-color: transparent;
+        font-size: 22px;
+        border-radius: 50%;
+        transform: rotate(0);
+        transition: all ease 0.4s;
+        color: $theme-color;
+
+        &:hover {
+            transform: rotate(90deg);
+        }
+    }
+
+    form {
+        display: block;
+        padding-bottom: 40px;
+        cursor: auto;
+        width: 100%;
+        max-width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+        transform: scale(0);
+        transition: transform ease 0.5s;
+
+        @include lg {
+            max-width: 600px;
+        }
+
+        input {
+            font-size: 18px;
+            height: 70px;
+            width: 100%;
+            border: 2px solid $theme-color;
+            background-color: transparent;
+            padding-left: 30px;
+            color: $title-color;
+            border-radius: 50px;
+
+            @include inputPlaceholder {
+                color: $title-color;
+            }
+        }
+
+        button {
+            position: absolute;
+            top: 0px;
+            background-color: transparent;
+            border: none;
+            color: $theme-color;
+            font-size: 24px;
+            right: 12px;
+            cursor: pointer;
+            width: 70px;
+            height: 70px;
+            transition: all ease 0.4s;
+            transform: scale(1.001);
+
+            &:hover {
+                transform: scale(1.1);
+            }
+        }
+    }
+
+    &.show {
+		transition-delay: 0s;
+		opacity: 1;
+		visibility: visible;
+		.search-content {
+			transition: transform 0.85s cubic-bezier(0.175, 1, 0.275, 1), visibility 0.8s step-start;
+        	transform: translate3d(0, 0, 0);
+		}
+        form {
+            transform: scale(1);
+        }
+    }
+}
