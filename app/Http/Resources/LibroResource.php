@@ -14,6 +14,13 @@ class LibroResource extends JsonResource
             'titulo' => $this->titulo,
             'autor' => $this->autor,
             'sinopsis' => $this->sinopsis,
+            'anio_publicacion' => $this->anio_publicacion,
+            'isbn' => $this->isbn,
+            'status' => $this->status,
+            'stock' => $this->stock,
+            'stock_minimo' => $this->stock_minimo,
+            'precio_base' => $this->precio_base,
+            'precio_final' => $this->precio_final,
             //'imagen' => $this->imagen,
             //'imagen_url' => $this->imagen ? Storage::url($this->imagen) : null,
             'imagen_secure_simple' => $this->generateSimpleSecureUrl($this->imagen), // Versión simple
@@ -22,7 +29,6 @@ class LibroResource extends JsonResource
             'updated_at' => $this->updated_at,
         ];
     }
-  
 
     /**
      * Versión simple que siempre funciona
